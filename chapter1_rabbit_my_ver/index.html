@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+      }
+
+      img {
+        display: block;
+        left: 50%;
+      }
+
+      .carrot {
+        position: relative;
+        left: 50%;
+      }
+
+      .special {
+        position: relative;
+        left: 50%;
+      }
+
+      aside {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="carrot" src="carrot.png" alt="carrot" />
+    <img class="carrot" src="carrot.png" alt="carrot" />
+    <img class="carrot" src="carrot.png" alt="carrot" />
+    <img class="carrot" src="carrot.png" alt="carrot" />
+    <img class="carrot" src="carrot.png" alt="carrot" />
+    <img class="special" src="rabbit.png" alt="rabbit" />
+    <img class="carrot" src="carrot.png" alt="carrot" />
+    <img class="carrot" src="carrot.png" alt="carrot" />
+    <img class="carrot" src="carrot.png" alt="carrot" />
+    <img class="carrot" src="carrot.png" alt="carrot" />
+    <img class="carrot" src="carrot.png" alt="carrot" />
+    <aside>
+      <button class="scroll-into">scroll into special</button>
+    </aside>
+    <script defer>
+      const special = document.querySelector('.special');
+      const scrollInto = document.querySelector('.scroll-into');
+
+      scrollInto.addEventListener('click', () => {
+        special.scrollIntoView();
+      });
+    </script>
+  </body>
+</html>
