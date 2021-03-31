@@ -1,0 +1,26 @@
+body {
+  background-color: gray;
+}
+
+.container {
+  background-color: white;
+  width: 500px;
+  height: 700px;
+  border-radius: 10px;
+}
+
+header {
+  background-color: violet;
+  height: 50px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+footer {
+  position: relative;
+  top: 584px;
+  height: 50px;
+  background-color: violet;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
